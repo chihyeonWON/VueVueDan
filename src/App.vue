@@ -4,7 +4,7 @@
       {{ first }} 곱하기 {{ second }} 는?
     </div>
     <form>
-      <input type="number">
+      <input type="number" v-model="inputValue">
       <button>입력</button>
     </form>
   </div>
@@ -18,6 +18,7 @@ export default {
     return{
       first:Math.ceil(Math.random()*9),
       second:Math.ceil(Math.random()*9),
+      inputValue:'',
     }
   }
 }
