@@ -1,11 +1,17 @@
 <template>
-<p></p>
+
 </template>
 
 <script>
 
 export default {
   name: 'App',
+  data(){
+    return{
+      first:Math.ceil(Math.random()*9),
+      second:Math.ceil(Math.random()*9),
+    }
+  }
 }
 </script>
 
