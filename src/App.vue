@@ -1,5 +1,13 @@
 <template>
-
+  <div id="root">
+    <div>
+      {{ first }} 곱하기 {{ second }} 는?
+    </div>
+    <form>
+      <input type="number">
+      <button>입력</button>
+    </form>
+  </div>
 </template>
 
 <script>
