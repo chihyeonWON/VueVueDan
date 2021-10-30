@@ -5,7 +5,7 @@
     </div>
     <form>
       <input type="number" v-model="inputValue">
-      <button>입력</button>
+      <button type="submit">입력</button>
     </form>
   </div>
 </template>
