@@ -4,7 +4,7 @@
       {{ first }} 곱하기 {{ second }} 는?
     </div>
     <form v-on:submit="onSubmitForm">
-      <input type="number" v-model="inputValue">
+      <input type="number" v-model="inputValue" ref="answer">
       <button type="submit">입력</button>
     </form>
     <div id="result">
@@ -34,8 +34,10 @@ export default {
         this.first = Math.ceil(Math.random() * 9);
         this.second = Math.ceil(Math.random() * 9);
         this.inputValue = '';
+        // ref 속성으로 커서 깜빡임을 유지
+        this.$refs.answer.focus();
       } else {
-        this.result='땡';
+        this.result='오답';
         this.inputValue='';
       }
     },
